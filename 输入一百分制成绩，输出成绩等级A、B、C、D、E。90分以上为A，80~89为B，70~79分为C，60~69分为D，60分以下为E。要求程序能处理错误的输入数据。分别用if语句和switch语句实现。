@@ -1,0 +1,35 @@
+1   switch语句
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int x,y;
+	char a;
+	scanf("%d",&x);
+	y=x/10;
+	switch(y)
+	{case 10:printf("A");break;
+	 case 9:printf("A");break;
+	 case 8:printf("B");break;
+	 case 7:printf("C");break;
+	 case 6:printf("D");break;
+	 case 5:printf("E");break;
+	 case 4:printf("E");break;
+	 case 3:printf("E");break;
+	 case 2:printf("E");break;
+	 case 1:printf("E");break;
+	 default:printf("数据错误！");break;
+	}
+} 
+
+2  if语句
+#include<stdio.h>
+int main(){
+	int x;
+	scanf("%d",&x);
+	if(x<60&&x>0) printf("E");
+	else if(x>=60&&x<70) printf("D");
+	else if(x>=70&&x<80) printf("C");
+	else if(x>=80&&x<90) printf("B");
+	else if(x>=90&&x<=100) printf("A");
+	else printf("数据错误！"); 
+}
