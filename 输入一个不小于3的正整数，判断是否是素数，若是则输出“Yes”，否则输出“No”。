@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int x,y,i;
+	scanf("%d",&x);
+	y=(int)sqrt(x);
+	for(i=2;i<=y;i++)
+	if(x%i==0) break;
+	if(i>y)
+	printf("yes");
+	else
+	printf("no");
+} 
