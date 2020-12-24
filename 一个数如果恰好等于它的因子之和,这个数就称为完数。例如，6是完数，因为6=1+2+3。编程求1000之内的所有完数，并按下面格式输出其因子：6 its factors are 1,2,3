@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int x,y,sum;
+	for(x=2;x<=1000;x++)
+	{for(y=1;y<x;y++)
+	{if(x%y==0)
+	{sum=sum+y;}}
+	if(sum==x)
+	{printf("%d its factors are ",x);
+	for(y=1;y<x;y++)
+	if(x%y==0)
+	printf("%d,",y);
+	printf("\n");}
+	sum=0;
+	}
+}
