@@ -1,0 +1,17 @@
+#include<stdio.h> 
+#define PI 3.1415926
+int main(){
+	float r,h,c,s,s1,s2,v;
+	printf("输入圆柱体的半径和高：");
+	scanf("%f%f",&r,&h);
+	c=2*PI*r;
+	printf("c=%.2f\n",c);
+	s=PI*r*r;
+	printf("s=%.2f\n",s);
+	s1=c*h;
+	printf("s1=%.2f\n",s1);
+	s2=2*s+s1;
+	printf("s2=%.2f\n",s2);
+	v=s*h;
+	printf("v=%.2f\n",v);	
+}
