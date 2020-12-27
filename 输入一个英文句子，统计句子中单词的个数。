@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int i=0,num=1;
+	char a;
+	while ((a=getchar())!='\n')
+	{if(a==' ')
+		{num++;
+		 while((a=getchar())==' '){}
+		}
+	 } 
+	 printf("%d\n",num);
+}
