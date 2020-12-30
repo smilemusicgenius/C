@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int a,b;
+	scanf("%d",&a);
+	if(a%4==0)
+	{
+		if(a%100!=0)
+		b=1;
+		if(a%400==0)
+		b=1;
+	}
+	if(b==1)
+	printf("%d是闰年！",a);
+	else
+	printf("%d不是闰年！",a);
+}
