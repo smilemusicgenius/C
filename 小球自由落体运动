@@ -1,0 +1,15 @@
+//第n次反弹多高？共经过多少米？ 
+#include<stdio.h>
+int main(){
+	float m,n,h,i,t,sum;
+	scanf("%f %f",&m,&n);
+	sum=m;
+	for(i=1;i<n;i++)
+	{
+		t=m/2;
+		h=t/2;
+		sum+=2*t;
+		m=t;
+	}
+	printf("%.2f,%.2f",h,sum);
+}
