@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+	int a=1,num;
+	scanf("%d",&num);
+	while(num)
+	{
+		a*=num%10;
+		num/=10;
+	}
+	printf("%d",a);
+} 
