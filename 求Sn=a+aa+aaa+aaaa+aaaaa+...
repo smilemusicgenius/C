@@ -1,0 +1,13 @@
+//输入5 3表示3个由5组成的数相加，计算5+55+555的值 
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int a,n,i;
+	double sum;
+	scanf("%d %d",&a,&n);
+	for(i=n-1,sum=0;i>=0;i--)
+		sum+=(pow(a,(n-i)));
+	for(i=n-1,sum=n*a;i>0;i--)
+		sum+=(n-i)*a*(pow(10,i));
+	printf("%.0lf",sum);
+}
